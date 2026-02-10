@@ -1,3 +1,5 @@
+package com.example.solid.ocp;
+
 public class GoodDiscountCalculator {
     private DiscountStrategy strategy;
 

@@ -1,3 +1,7 @@
+package com.example.solid.dip;
+
+import com.example.solid.dip.Database;
+
 public class GoodOrderProcessor {
     private Database database;
 

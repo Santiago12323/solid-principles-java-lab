@@ -115,3 +115,49 @@ solid-principles-java-lab/
 
 **Patrón relacionado:** Dependency Injection
 
+---
+
+## Pruebas Unitarias (JUnit 5)
+
+El proyecto incluye **pruebas unitarias** desarrolladas con **JUnit 5**, las cuales permiten validar el correcto funcionamiento del código refactorizado y comprobar que los principios SOLID han sido aplicados correctamente.
+
+Las pruebas se encuentran en la ruta:
+
+```text
+src/test/java/com/example/solid/
+```
+### Pruebas por Principio SOLID
+
+#### Single Responsibility Principle (SRP)
+
+- Se valida que la clase encargada de la lógica de negocio calcule correctamente el total de la factura.
+- No se prueban responsabilidades externas como impresión o persistencia, garantizando el cumplimiento del SRP.
+
+---
+
+#### Open/Closed Principle (OCP)
+
+- Se valida que el cálculo de descuentos funcione correctamente para diferentes estrategias.
+- Se comprueba que es posible extender el sistema sin modificar el código existente.
+
+---
+
+#### Liskov Substitution Principle (LSP)
+
+- Se valida que las diferentes implementaciones puedan sustituirse sin romper el comportamiento esperado.
+- No se presentan excepciones inesperadas al usar clases derivadas.
+
+---
+
+#### Interface Segregation Principle (ISP)
+
+- Se comprueba que las clases solo implementan los métodos que realmente necesitan.
+- Se evita la implementación de métodos innecesarios.
+
+---
+
+#### Dependency Inversion Principle (DIP)
+
+- Se valida que el procesamiento de pedidos dependa de una abstracción y no de una implementación concreta.
+- Se comprueba la correcta inyección de dependencias.
+

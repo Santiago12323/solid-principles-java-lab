@@ -1,3 +1,5 @@
+package com.example.solid.lsp;
+
 public class GasCar implements Drivable, FuelCar {
     public void drive() {
         System.out.println("Conduciendo coche a gasolina...");

@@ -1,3 +1,5 @@
+package com.example.solid.isp;
+
 public class OfficeWorker implements Workable, Eatable {
     public void work() {
         System.out.println("Trabajando en oficina...");

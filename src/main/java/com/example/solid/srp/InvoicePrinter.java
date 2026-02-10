@@ -1,3 +1,5 @@
+package com.example.solid.srp;
+
 public class InvoicePrinter {
 
     public void print(Invoice invoice) {
